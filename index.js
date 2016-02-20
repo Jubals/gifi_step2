@@ -23,8 +23,8 @@ function onYouTubeIframeAPIReady() {
 		player.pauseVideo()
 	}
 
-	function onPlayerReady(var) {
-    var.target.playVideo()
+	function onPlayerReady(c) {
+    c.target.playVideo()
 }
 }
 

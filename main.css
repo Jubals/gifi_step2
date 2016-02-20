@@ -18,6 +18,14 @@ h2 {
 }
 
 #player {
-	margin: auto;
+	display: block; 
+	margin: 0 auto
+
+}
+
+#controls {
+	 width: 25% ;
+  margin-left: auto ;
+  margin-right: auto ;"
 
 }

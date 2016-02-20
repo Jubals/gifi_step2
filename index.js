@@ -23,19 +23,19 @@ function onYouTubeIframeAPIReady() {
 		player.pauseVideo()
 	}
 
-	function onPlayerReady(c) {
-    c.target.playVideo()
+	function onPlayerReady(var) {
+    var.target.playVideo()
 }
 }
 
 $(document).ready(function() {
-    var c = ['<option value="none" disabled selected>Select a friend</option>'];
+    var list = ['<option value="none" disabled selected>Select a friend</option>'];
     $.getJSON("http://learn.gifi.co.il/api/users/", function(d) {
         
         $.each(d.users, function(a, b) {
-            c.push("<option value='" + b.video + "'>" + b.fullname + "</option>")
+            list.push("<option value='" + b.video + "'>" + b.fullname + "</option>")
         });
-        $("#users").html(c.join("")).change(function() {
+        $("#users").html(list.join("")).change(function() {
             var a = $(this).val().split("v=")[1],
                 b = a.indexOf("&"); - 1 != b && (a = a.substring(0, b));
             console.log(a);

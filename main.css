@@ -35,5 +35,11 @@ h2 {
 
 button {
 	 background: #E4E9EB;
+	 border-radius:15px;
 
 }
+
+#users {
+	font-weight:bold;
+}
+
